@@ -1,0 +1,53 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: linkerd-values-from
+  namespace: default
+  selfLink: /api/v1/namespaces/default/configmaps/linkerd-values-from
+  uid: a6c1c50a-a863-4529-9620-d33d276a488e
+  resourceVersion: '6036405'
+  creationTimestamp: '2021-02-16T16:26:43Z'
+  managedFields:
+    - manager: HashiCorp
+      operation: Update
+      apiVersion: v1
+      time: '2021-02-17T08:57:25Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:data':
+          .: {}
+          'f:values.yaml': {}
+data:
+  values.yaml: |
+    "global.identityTrustAnchorsPEM": |
+      -----BEGIN CERTIFICATE-----
+      MIIBjzCCATSgAwIBAgIRAPnyoS+eL6oWVsacdcCvkoMwCgYIKoZIzj0EAwIwJTEj
+      MCEGA1UEAxMacm9vdC5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjEwMjE3MTMz
+      MzUxWhcNMzEwMjE1MTMzMzUxWjAlMSMwIQYDVQQDExpyb290LmxpbmtlcmQuY2x1
+      c3Rlci5sb2NhbDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABIyHaHRb3CsDd4Jp
+      DeyMJN5gerw+l+LouyVxp56CHD6CAzqztMOlw1xKdDcxp2w7NgG8F5uzs9rmxSgn
+      vmYMBKSjRTBDMA4GA1UdDwEB/wQEAwIBBjASBgNVHRMBAf8ECDAGAQH/AgEBMB0G
+      A1UdDgQWBBTdt+SfQZkud53w0dF3pWTlU1UlrzAKBggqhkjOPQQDAgNJADBGAiEA
+      yoDWNZRCxOlxrbWeW8I6NO1a3dPbM6vDuj27B+VSl/cCIQDIaT4qtrp6bYOxjjre
+      Hl5BBcOD/1jM0HdyLZCTalWLWQ==
+      -----END CERTIFICATE-----
+    "identity.issuer.crtExpiry": "2022-02-16T16:26:33.2044466Z"
+    "identity.issuer.tls.crtPEM": |
+      -----BEGIN CERTIFICATE-----
+      MIIBsjCCAVigAwIBAgIQTjNJ+lBpLlyACryoBJ96OjAKBggqhkjOPQQDAjAlMSMw
+      IQYDVQQDExpyb290LmxpbmtlcmQuY2x1c3Rlci5sb2NhbDAeFw0yMTAyMTcxMzMz
+      NTNaFw0yMjAyMTcxMzMzNTNaMCkxJzAlBgNVBAMTHmlkZW50aXR5LmxpbmtlcmQu
+      Y2x1c3Rlci5sb2NhbDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABFxUBguym3qk
+      V1q4jaBes95e7iOq+GI2c31OTRURwTvbR/YTMsRGO4+Scv5YoHolO0Qq9Q2TDyPR
+      w+onr4t3jcmjZjBkMA4GA1UdDwEB/wQEAwIBBjASBgNVHRMBAf8ECDAGAQH/AgEA
+      MB0GA1UdDgQWBBS9Xeg7VFDjLamS49ZHAWFsuc0NHjAfBgNVHSMEGDAWgBTdt+Sf
+      QZkud53w0dF3pWTlU1UlrzAKBggqhkjOPQQDAgNIADBFAiBoO0S3UXBbga7N1EQl
+      LUhCvlIiYLlPqrY1x/lN1C5EnQIhAIoJZ7jomb26G3rYZonZIzXx+jZd2VBZgp2n
+      hN5dZnze
+      -----END CERTIFICATE-----
+    "identity.issuer.tls.keyPEM": |
+      -----BEGIN EC PRIVATE KEY-----
+      MHcCAQEEIHr9lIzB4b8aREMONg9bHHjODq2OJ7CYbrhv5/wq9/d4oAoGCCqGSM49
+      AwEHoUQDQgAEXFQGC7KbeqRXWriNoF6z3l7uI6r4YjZzfU5NFRHBO9tH9hMyxEY7
+      j5Jy/ligeiU7RCr1DZMPI9HD6ievi3eNyQ==
+      -----END EC PRIVATE KEY-----
